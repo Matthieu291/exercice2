@@ -4,14 +4,12 @@ echo "<h1>Exercice 2</h1>";
 class formulaire {
 
     public function __construct(){
-        echo "
-<form action ='/testformulaire.php'> "
-;
+        echo "<form action ='' method ='post'>";
     }
 
-    public function ajouterzonetexte($string = NULL){
+    public function ajouterzonetexte($string = NULL, $str2 = NULL){
         echo "<b>$string :";
-        echo" <input type='text' name ='$string'>";
+        echo" <input type='text' name ='str2'>";
         echo"<br>";
     }
 
@@ -46,6 +44,20 @@ class formulaire {
     }
 }
 
+class recup {
+    public $nom;
+    public $prenom;
+    public $mail;
+    public $age;
+    public $gender;
+    public function __construct(){
+        $this->nom =$_POST['nom'];
+        $this->prenom =$_POST['prenom'];
+        $this->mail =$_POST['mail'];
+        $this->age = $_POST['Age'];
+        $this->gender = $_POST['genre'];
+    }
+}
 
 include 'testformulaire.php';
 ?>
