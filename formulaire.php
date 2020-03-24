@@ -9,7 +9,7 @@ class formulaire {
 
     public function ajouterzonetexte($string = NULL, $str2 = NULL){
         echo "<b>$string :";
-        echo" <input type='text' name ='str2'>";
+        echo" <input type='text' name ='$str2' >";
         echo"<br>";
     }
 
@@ -57,6 +57,7 @@ class recup {
         $this->age = $_POST['Age'];
         $this->gender = $_POST['genre'];
     }
+
 }
 
 include 'testformulaire.php';
