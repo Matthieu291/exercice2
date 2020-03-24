@@ -26,5 +26,5 @@ class formulaire {
         echo "</form>";
     }
 }
-
+include 'testformulaire.php';
 ?>

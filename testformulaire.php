@@ -1,5 +1,4 @@
 <?php
-include 'formulaire.php';
 
 $f1 = new formulaire();
 $f1->ajouterzonetexte("Votre nom");
