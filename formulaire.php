@@ -60,5 +60,14 @@ class recup {
 
 }
 
+class form2 extends formulaire {
+    public function ajoutersport(){
+        echo"<br>";
+        echo "<input type='radio' name ='sport' value ='Tennis'><label for='Tennis'>Tennis</label>";
+        echo "<input type='radio' name ='sport' value ='Equitation'><label for='Equitation'>Equitation</label>";
+        echo "<br>";
+    }
+}
+
 include 'testformulaire.php';
 ?>
